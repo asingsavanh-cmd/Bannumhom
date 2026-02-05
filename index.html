@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfume Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Perfume Collection</h1>
+  <p>Timeless scents, crafted with elegance</p>
+</header>
+
+<main class="perfume-grid">
+
+  <div class="perfume-card" onclick="openModal('Jean Paul Gaultier Le Male Elixir')">
+    <img src="images/952041-L2.jpg.avif" alt="Jean Paul Gaultier Le Male Elixir">
+    <h2>Jean Paul Gaultier Le Male Eau De Parfum Intense 125ml</h2>
+    <p>lavender, mint, vanilla, and benzoin</p>
+    <p class="price">Price: 4,055,000 Kip</p>
+  </div>
+
+  <div class="perfume-card" onclick="openModal('Jean Paul Gaultier Le Male Elixir')">
+    <img src="images/jean-paul-le-male-elixir-125.jpg" alt="Jean Paul Gaultier Le Male Elixir">
+    <h2>Jean Paul Gaultier Le Male Elixir Parfum 125ml</h2>
+    <p>lavender, mint, vanilla, and benzoin</p>
+    <p class="price">Price: 3,550,000 Kip</p>
+  </div>
+
+  <div class="perfume-card" onclick="openModal('Midnight Oud')">
+    <img src="images/jean_paul_le_male_125ml_2c09f8f8-31f7-4544-a633-869a7aed7f7a_700x700.jpg.webp" alt="Midnight Oud">
+    <h2>Jean Paul Gaultier Le Male Eau De Toilette 200ml</h2>
+    <p>A fresh, minty, and lavender-driven</p>
+    <p class="price">Price: 3,055,000 Kip</p>
+  </div>
+
+</main>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f8f6f3;
+    color: #1c1c1c;
+  }
+  
+  header {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #666;
+  }
+  
+  .perfume-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  .perfume-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .perfume-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  }
+  
+  .perfume-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .perfume-card h2 {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+  .perfume-card p {
+    font-size: 14px;
+    color: #3c3b3b;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background: #fff;
+    max-width: 500px;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 14px;
+    position: relative;
+  }
+
+  .price {
+    font-size: 50px;
+    font-weight: 600;
+    color: #000000 !important;
+  }
+
+  .perfume-card p.price {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
